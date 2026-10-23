@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wilson | ICT & Software Developer</title>
+  <meta name="description"
+        content="Personal portfolio showcasing ICT skills, experience and software projects.">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">Wilson<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    ☰
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hello, I'm <span>Wilson</span></h1>
+
+        <h2>ICT Professional & <span id="typedText">Aspiring Developer</span></h2>
+
+        <p class="intro">
+          I enjoy solving technical problems, supporting computer systems
+          and building useful digital solutions. I'm always learning and
+          developing my software development skills.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn secondary">Contact Me</a>
+
+          <a href="images/Wilson-CV.pdf"
+             class="btn secondary" download>
+            Download My CV
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image reveal">
+        <div class="image-ring">
+          <img src="images/Screenshot (189).png" alt="Wilson's professional profile photo">
+        </div>
+        <span class="floating-tag">ICT & Technology</span>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-card reveal">
+        <p>
+          I have a background in Information and Communication Technology,
+          including computer maintenance, software installation,
+          troubleshooting and digital systems support.
+        </p>
+        <p>
+          My goal is to grow into a skilled software developer, gain
+          practical experience and contribute to projects that solve
+          real-world problems.
+        </p>
+        <a href="#experience" class="text-link">Explore my experience →</a>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I CAN DO</p>
+        <h2>My <span>Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3>IT Support</h3>
+          <p>Computer maintenance, troubleshooting and system support.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Learning and building websites using HTML, CSS and JavaScript.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">⚙️</div>
+          <h3>Software Installation</h3>
+          <p>Installing, configuring and maintaining software applications.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">🗂️</div>
+          <h3>Digital Systems</h3>
+          <p>Digital filing, documentation and information management.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY PROFESSIONAL JOURNEY</p>
+        <h2>Experience & <span>Learning</span></h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <p class="eyebrow">ICT INTERNSHIP</p>
+            <h3>ICT Intern — Stonehedge Company</h3>
+            <p class="muted">June 2022 – December 2022</p>
+            <p>
+              Supported computer systems, troubleshot hardware and
+              software issues, helped staff use ICT tools and assisted
+              with digital filing systems.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <p class="eyebrow">INDUSTRIAL ATTACHMENT</p>
+            <h3>Trainee — Quickmark Solutions</h3>
+            <p class="muted">January 2020 – May 2020</p>
+            <p>
+              Assisted with hardware and software installation,
+              basic website development and business process documentation.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact <span>Me</span></h2>
+        <p>Have an opportunity or project in mind? Send me a message.</p>
+      </div>
+
+      <form id="contactForm" class="contact-form reveal">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5"
+                  placeholder="Write your message..." required></textarea>
+
+        <button class="btn primary" type="submit">Send Message</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Wilson. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+</body>
+</html>
